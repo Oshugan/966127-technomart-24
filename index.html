@@ -121,5 +121,29 @@
       <!-- Здесь будет форма -->
       <span class="modal-close">x</span>
     </section>
+    <section map-container>
+      <div class="map">
+        <!--Map will be here-->
+      </div>
+    </section>
+    <section class="feedback">
+      <form name="feedbackform" action="#" method="post">
+        <p>
+        <label for="name">Ваше имя:</label>
+        <input type="text" name="yourname" id="name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="email">Ваше e-mail:</label>
+        <input type="text" name="youremail" id="email" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="comment">Текст письма:</label>
+      </p>
+      <p>
+        <textarea id="comment" cols="35" rows="5"></textarea>
+      </p>
+        <input type="submit" name="send" value="Отправить">
+      </form>
+    </section>
   </body>
 </html>
