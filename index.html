@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="main-header">
-      <div id="topbar">
+      <div class="topbar">
         <a class="header-logo">
         <img src="img/index-logo.png" alt="Техномарт">
         </a>
@@ -96,7 +96,6 @@
         </ul>
       </div>
       <div class="footer-bottom">
-        <div class="copyright">
           <p class="footer-copyright">
             © 2010 - 2017 Компания «Техномарт»
             Все права защищены
@@ -112,7 +111,6 @@
           <p class="template-by">
             <b>Разработано - </b><a href="htmlacademy.ru">htmlacademy.ru</a>
           </p>
-        </div>
       </div>
     </footer>
     <section class="modal modal-login">
@@ -124,7 +122,9 @@
     <section map-container>
       <div class="map">
         <!--Map will be here-->
+        <img src="img/map.png" alt="Карта">
       </div>
+      <span class="modal-close">x</span>
     </section>
     <section class="feedback">
       <form name="feedbackform" action="#" method="post">
@@ -138,12 +138,11 @@
       </p>
       <p>
         <label for="comment">Текст письма:</label>
-      </p>
-      <p>
         <textarea id="comment" cols="35" rows="5"></textarea>
       </p>
         <input type="submit" name="send" value="Отправить">
       </form>
+      <span class="modal-close">x</span>
     </section>
   </body>
 </html>
