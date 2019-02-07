@@ -1,0 +1,204 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: 'Cuprum', sans-serif;
+	font-size: 17px;
+	line-height: 17px;
+	font-weight: 400;
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main-navigation {
+	font-size: 17px;
+	line-height: 20px;
+	color: #ffffff;
+
+	background-color: #32425c;
+}
+
+.site-navigation{
+	list-style: none;
+}
+
+.site-navigation a {
+	color: #ffffff;
+}
+
+.topbar {
+	font-size: 17px;
+	line-height: 20px;
+	color: #ffffff;
+
+	background-color: #32425c;
+}
+
+.topbar-navigation {
+	list-style: none;
+}
+
+.topbar a {
+	color: #ffffff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.topbar-navigation a:hover,
+.topbar-navigation a:focus {
+	background-color: #242424;
+}
+
+.top-content {
+	color:#000000;
+
+	background-color: #f3f7f8;
+	background-position: 0 0;
+
+}
+
+.row-call {
+	text-align: center;
+}
+
+.phone-namber {
+	color: #ee3643;
+	border: 2px solid #ffffff;
+}
+
+.user-navigation{
+	list-style: none;
+}
+
+.user-navigation a {
+	color: #000000;
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus {
+	background-color: #984949;
+}
+
+.user-navigation a {
+	background-color: #ffffff;
+}
+
+
+.footer-top {
+	font-size: 17px;
+	line-height: 20px;
+	color: #ffffff;
+
+	background-color: #32425c;
+}
+
+.footer-nav {
+	list-style: none;
+}
+
+.footer-nav a {
+	color: #ffffff;
+}
+
+.footer-nav a:hover,
+.footer-nav a:focus {
+	color: #ffcf8c;
+}
+
+.footer-navigation {
+	list-style: none;
+}
+
+.footer-navigation a {
+	color: #ffcf8c;
+}
+
+.footer-navigation a:hover,
+.footer-navigation a:focus {
+	color: #ffffff;
+}
+
+.footer-bottom {
+	background-color: #293448;
+	color: #ffffff;
+}
+
+.footer-social {
+	list-style: none;
+	text-align: center;
+}
+
+.social-button {
+  color: #ffffff;
+}
+
+.callback a{
+	color: #ffcf8c;
+}
+
+.template-by a{
+	color: #ffcf8c;
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+.about-us h2{
+	text-transform: uppercase;
+}
+
+.about-us ul{
+	list-style: none;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #f03644;
+  border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+	background-color: #715759;
+}
+
+.map-container {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.feedbackform input[type="text"],
+.feedbackform input[type="comment"] {
+  font: inherit;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+}
+
+.feedbackform input:focus {
+  border-color: #663d15;
+}
+
+.feedbackform:hover,
+.feedbackform:focus {
+  color: #663d15;
+}
+
+.catalog-list {
+	list-style: none;
+}
