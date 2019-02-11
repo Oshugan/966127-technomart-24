@@ -2,9 +2,9 @@
 <html lang="ru">
    <head>
       <meta charset="UTF-8">
+      <link href="css/normalize.css" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="css/style.css">
       <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
-      <link href="css/normalize.css" rel="stylesheet">
       <title>Техномарт</title>
    </head>
    <body>
@@ -60,6 +60,16 @@
             <!-- form -->
             <div class="content">
             <form action="#" method="post">
+               <h3>Фильтр</h3>
+               <fieldset>
+                  <legend>Цена</legend>
+                  <div>
+                     <input type="range" id="money" name="price" min="0" max="100" step="1" value="0">
+                     <output for="money" name="level">0</output>
+                     -
+                     <output for="money" name="level">30000</output>
+                  </div>
+               </fieldset>
                <fieldset>
                   <legend>Производители:</legend>
                   <div>
@@ -96,6 +106,16 @@
                </fieldset>
                   <button type="submit" value="Показать">Показать</button>
             </form>
+            <div class="sort">
+               <ul>
+                  <li>Сортировка:</li>
+                  <li>по цене</li>
+                  <li>по типу</li>
+                  <li>по функционалу</li>
+                  <li class="up"></li>
+                  <li class="down"></li>
+               </ul>
+            </div>
          <section class="catalog">
             <h2 class="visually-hidden">Список товаров для ремонта</h2>
                <ul class="catalog-list">
@@ -250,6 +270,16 @@
                      </p>
                   </li>
                </ul>
+               <ul class="pagination-list">
+          <li class="pagination-item pagination-item-current"><a>1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">Следующая</a></li>
+        </ul>
+         </section>
+         <section class="about-item">
+            <h2>Пара слов о перфораторах</h2>
+            <p>Перфоратор - универсальный строительный инмтрумент.Предназначен для сверления и долбления отверстий в кирпиче,бетоне и камне.Существуют электромеханические и пневматические перфораторы.Соврменные модели могут выполнять функции дрели,шуроповерта и отбойношо молотка.В ассортиментном ряду есть выбор «трехрежимников»:в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
          </section>
       </div>
       </main>
