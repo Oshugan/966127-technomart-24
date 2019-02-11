@@ -48,10 +48,14 @@ a {
 }
 
 .site-navigation a:hover,
-.site-navigation a:focus,
-.topbar-navigation a:hover,
-.topbar-navigation a:focus {
-	background-color: #242424;
+.topbar-navigation a:hover {
+	background-color: #1d2739;
+}
+
+.site-navigation a:active,
+.topbar-navigation a:active {
+	background-color: #1d2739;
+	opacity: 0.5;
 }
 
 .top-content {
@@ -79,9 +83,13 @@ a {
 	color: #000000;
 }
 
-.user-navigation a:hover,
-.user-navigation a:focus {
-	background-color: #984949;
+.user-navigation a:hover{
+	color: #fb463c;
+}
+
+.user-navigation a:active{
+	color:#000000;
+	opacity: 0.5;
 }
 
 .user-navigation a {
