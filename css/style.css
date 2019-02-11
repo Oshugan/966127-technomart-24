@@ -113,9 +113,12 @@ a {
 	color: #ffffff;
 }
 
-.footer-nav a:hover,
-.footer-nav a:focus {
+.footer-nav a:hover {
 	color: #ffcf8c;
+}
+
+.footer-nav a:active {
+	opacity: 0.3;
 }
 
 .footer-navigation {
@@ -126,9 +129,12 @@ a {
 	color: #ffcf8c;
 }
 
-.footer-navigation a:hover,
-.footer-navigation a:focus {
+.footer-navigation a:hover {
 	color: #ffffff;
+}
+
+.footer-navigation a:active {
+	opacity: 0.3;
 }
 
 .footer-bottom {
@@ -189,7 +195,7 @@ a {
 }
 
 .feedbackform input[type="text"],
-.feedbackform input[type="comment"] {
+.feedbackform input[type="textarea"] {
   font: inherit;
   color: #000000;
   text-transform: uppercase;
@@ -202,8 +208,8 @@ a {
   border-color: #663d15;
 }
 
-.feedbackform:hover,
-.feedbackform:focus {
+.feedbackform input:hover,
+.feedbackform input:focus {
   color: #663d15;
 }
 
