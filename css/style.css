@@ -11,6 +11,15 @@ body {
 	background-color: #ffffff;
 }
 
+main {
+	display: block;
+    margin-bottom: 85px;
+}
+
+.container {
+	display: flex;
+}
+
 a {
 	text-decoration: none;
 }
@@ -34,6 +43,8 @@ a {
 	display: flex;
     justify-content: space-around;
 	list-style: none;
+	margin: 0;
+    padding: 0;
 }
 
 .site-navigation a {
@@ -207,15 +218,29 @@ a {
 .footer-bottom {
 	background-color: #293448;
 	color: #ffffff;
+	padding: 15px;
 }
 
 .footer-social {
+	display: flex;
+	flex: 1;
 	list-style: none;
 	text-align: center;
+	justify-content: center;
 }
 
 .social-button {
-  color: #ffffff;
+    color: #ffffff;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 43px;
+    height: 43px;
+    background-color: #29384a;
 }
 
 .callback a{
@@ -227,7 +252,15 @@ a {
 }
 
 .footer-copyright {
-  text-align: center;
+  	float: left;
+  	width: 228px;
+	height: 33px;
+	color: #ffffff;
+	font-family: Cuprum;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 18px;
+	flex: 1;
 }
 
 .about-us h2{
@@ -236,6 +269,9 @@ a {
 
 .about-us ul{
 	list-style: none;
+	margin: 0;
+    margin-bottom: 38px;
+    padding: 0;
 }
 
 .button {
@@ -422,4 +458,172 @@ a {
     color: #000000;
     background-color: #ffffff;
     transition: 200ms color;
+}
+
+.about-us {
+	font-family: "Myriad Pro";
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.about-us h2{
+	font-family: Cuprum;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 30px;
+	text-transform: uppercase
+}
+
+.about-us p{
+	margin: 0;
+    margin-bottom: 27px;
+    padding: 0;
+}
+
+.company {
+	font-family: Cuprum;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+.service h2{
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 30px;
+	text-transform: uppercase
+}
+
+.service p{
+	font-family: "PT Sans";
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.company-list li::before {
+	content: "";
+    position: absolute;
+    left: 0px;
+    width: 25px;
+    height: 2px;
+    margin-top: 8px;
+    background-color: #ff716f
+}
+
+.company-list li{
+	position: relative;
+	font-family: Cuprum;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 20px;
+	margin-bottom: 20px;
+	padding-left: 35px;
+}
+
+.button {
+	display: inline-block;
+    padding: 11px 50px;
+    font: inherit;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Cuprum", sans-serif;
+    vertical-align: middle;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: #ff5357;
+    border: none;
+    border-radius: 2px;
+    -o-transition: 150ms all;
+    transition: 150ms all;
+}
+
+.button-adress {
+	width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding: 11px 0px;
+}
+
+.map {
+	padding-bottom: 40px;
+}
+
+.visually-hidden:not(:focus):not(:active){
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+}
+
+.vk a::before {
+	content: "";
+    background: url(../img/icon/vk-icon.png)no-repeat 0;
+    width: 30px;
+    height: 16px;
+    position: absolute;
+}
+
+.vk a:hover {
+	background-color: #ff5357;
+}
+
+.vk a:active {
+	background-color: #ff5357;
+	opacity: 0.5;
+}
+
+.facebook a::before {
+	content: "";
+    background: url(../img/icon/fb-icon.png)no-repeat 0;
+    width: 13px;
+    height: 25px;
+    position: absolute;
+}
+
+.facebook a:hover {
+	background-color: #ff5357;
+}
+
+.facebook a:active {
+	background-color: #ff5357;
+	opacity: 0.5;
+}
+
+.instagram a::before {
+	content: "";
+    background: url(../img/icon/insta-icon.png)no-repeat 0;
+    width: 21px;
+    height: 16px;
+    position: absolute;
+}
+
+.instagram a:hover {
+	background-color: #ff5357;
+}
+
+.instagram a:active {
+	background-color: #ff5357;
+	opacity: 0.5;
+}
+
+.callback{
+	display: flex;
+	flex: 1;
+	font-size: 16px;
+	line-height: 18px;
+	list-style: none;
+}
+
+.template-by {
+	flex: 1;
 }
