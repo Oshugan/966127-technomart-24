@@ -316,10 +316,6 @@ a {
   color: #663d15;
 }
 
-.catalog-list {
-	list-style: none;
-}
-
 .main-header {
 	display: block;
 	background-color: #f3f7f8;
@@ -750,17 +746,40 @@ a {
 
 .about-item {
 	display: flex;
+	background-color: #f2f6f8;
+	margin-bottom: -85px;
+	padding-top: 61px;
+    padding-bottom: 70px;
+}
+
+.about-item h2{
+	color: #000000;
+    font-family: Cuprum;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.about-item p{
+	font-family: "Myriad Pro";
+    font-size: 14px;
+    font-family: "PT Sans";
+    font-weight: 400;
+    line-height: 24px;
 }
 
 .catalog-list {
 	display: flex;
+	list-style: none;
 	flex-wrap: wrap;
 	padding: 0;
+	justify-content: space-between;
 
 }
 
 .catalog-list li{
-	flex: 1;
+	margin: 10px 0px;
 }
 
 .catalog-item {
