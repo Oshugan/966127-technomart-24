@@ -627,3 +627,15 @@ a {
 .template-by {
 	flex: 1;
 }
+
+.map-container {
+	display: none;
+}
+
+.feedback {
+	display: none;
+}
+
+.added-to-cart-message-alert {
+	display: none;
+}
