@@ -7,6 +7,7 @@ body {
 	line-height: 17px;
 	font-weight: 400;
 	color: #000000;
+	box-sizing: border-box;
 
 	background-color: #ffffff;
 }
@@ -61,7 +62,6 @@ a {
 
 .topbar-navigation {
 	list-style: none;
-	padding: 12px 16px;
     margin: 0;
 }
 
@@ -85,11 +85,9 @@ a {
 
 .top-content {
 	display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 	color:#000000;
-	padding: 5px;
-	padding-top: 37px;
-    padding-bottom: 25px;
+	padding: 40px 0px 40px 0px;
 
 }
 
@@ -98,21 +96,22 @@ a {
 }
 
 .row-info {
-	padding-left: 64px;
-	width: 196px;
-	height: 60px;
+	width: 175px;
 	color: #ee3643;
 	font-family: Cuprum;
 	font-size: 16px;
 	font-style: italic;
 	line-height: 23px;
+	margin: 0;
 	margin-right: 44px;
+	padding-left: 50px
 }
 
 .phone-namber {
 	color: #ee3643;
 	border: 3px solid #ffffff;
     padding: 9px 0px;
+    margin: 0;
 }
 
 .phone-namber a{
@@ -136,7 +135,7 @@ a {
 .user-navigation{
 	display: flex;
 	list-style: none;
-    margin: 20px 0px;
+    margin:0;
 }
 
 .user-navigation li{
@@ -328,7 +327,7 @@ a {
 
 .topbar {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	line-height: 18px;
 	max-height: 42px;
@@ -470,6 +469,7 @@ a {
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 24px;
+	width: 500px;
 }
 
 .about-us h2{
@@ -486,6 +486,12 @@ a {
     padding: 0;
 }
 
+.company>.row {
+	display: flex;
+	align-items: baseline;
+    justify-content: space-between
+}
+
 .company {
 	font-family: Cuprum;
 	font-size: 18px;
@@ -493,11 +499,32 @@ a {
 	line-height: 20px;
 }
 
+.adress {
+	font-family: "Myriad Pro";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.adress h2{
+	font-family: Cuprum;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.service {
+	display: block;
+    margin-top: 30px;
+}
+
 .service h2{
 	font-size: 30px;
 	font-weight: 400;
 	line-height: 30px;
-	text-transform: uppercase
+	text-transform: uppercase;
+	margin: 0;
 }
 
 .service p{
@@ -648,12 +675,18 @@ a {
 .breadcrumbs {
 	display: flex;
 	list-style: none;
-	padding: 0
+	padding: 0;
+	color: #000000;
+    text-transform: uppercase;
+}
+
+.breadcrumbs a{
+	color: #000000;
 }
 
 .breadcrumbs li{
 	position: relative;
-    margin-right: 40px;
+    margin-right: 45px;
     padding-top: 2px;
 }
 
@@ -675,6 +708,7 @@ a {
 }
 
 .cat-title {
+	margin: 0;
 	color: #32425c;
 	font-family: Cuprum;
 	font-size: 30px;
@@ -689,6 +723,13 @@ a {
 .filter fieldset{
 	padding: 0;
     border: 0;
+    padding: 0;
+    border: 0;
+    margin-bottom: 13px;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 30px;
+    text-transform: uppercase;
 }
 
 .filter {
@@ -699,6 +740,9 @@ a {
 .filter-title{
 	display: flex;
 	background-color: #f7f3ec;
+	margin: 0;
+    padding-left: 19px;
+    text-transform: uppercase;
 }
 
 .filter-title p{
@@ -727,10 +771,53 @@ a {
 	justify-content: space-between;
     display: flex;
     width: 100%;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+.sort-item {
+	color: #000000;
 }
 
 .sort-item {
 	display: flex;
+}
+
+.sort-item a:hover::after {
+    border-top-style: solid;
+}
+
+.sort-active::after {
+	content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    border: none;
+    border-top: 1px dotted #ee3643;
+}
+
+.sort-type::after {
+	content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    border: none;
+    border-top: 1px dotted #ee3643;
+}
+
+.sort-function::after {
+	content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    border: none;
+    border-top: 1px dotted #ee3643;
 }
 
 .content {
@@ -741,7 +828,26 @@ a {
 	display: flex;
 	flex-wrap: wrap;
 	flex: 3;
+}
 
+.sort-type {
+	position: relative;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.sort-active {
+	position: relative;
+	color: #ee3643;
+}
+
+.sort-item a:hover,
+.sort-item a:active {
+	color: #000000;
+}
+
+.sort-function {
+	position: relative;
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .about-item {
@@ -790,6 +896,130 @@ a {
 
 .pagination-list {
 	display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.user {
+	display: block;
+}
+
+.user-link {
+	position: relative;
+    width: 253px;;
+    padding-left: 47px;
+}
+
+.user-link {
+	display: block;
+    padding-top: 15px;
+    padding-bottom: 14px;
+    font-size: 21px;
+    font-family: "Cuprum", sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+    -o-transition: 200ms color;
+    transition: 200ms color;
+}
+
+.user-link::before {
+	content: "";
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 20px;
+    height: 18px;
+    background-image: url(../img/svg/icon-user.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    -o-transition: 200ms all;
+    transition: 200ms all;
+}
+
+.user-link::after {
+	content: "";
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    width: 21px;
+    height: 17px;
+    background-image: url(../img/svg/icon-logout.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    -o-transition: 200ms all;
+    transition: 200ms all;
+}
+
+.personal-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-left: 50px;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "Cuprum", sans-serif;
+}
+
+.personal-navigation {
+    text-decoration: underline;
+}
+
+.personal-account {
+	margin: 0px 30px;
+}
+
+.my-order {
 	list-style: none;
-	width: 100%;
+}
+
+.pagination-item {
+	margin-right: 10px;
+}
+
+.pagination-list a{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-width: 38px;
+    min-height: 38px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+}
+
+.pagination-item-current {
+	color: #ffffff;
+    background-color: #ee3643;
+    border: none;
+}
+
+.next {
+	margin-left: 10px;
+    padding: 0 30px;
+}
+
+.sort-item li:nth-child(1) {
+	padding-left: 19px;
+}
+
+.catalog-category {
+	display: block;
+}
+
+.catalog-item a{
+	color: #000000;
+	font-family: "PT Sans";
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 20px;
+}
+
+.catalog-item-price b{
+	text-decoration: line-through;
 }
