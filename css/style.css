@@ -57,6 +57,9 @@ input[type="checkbox"].visually-hidden {
     background-color: #33445a;
 }
 
+.hidden {
+    visibility: hidden;
+}
 
 .topbar-header .container{
     display: flex;
@@ -2405,4 +2408,42 @@ input[type="checkbox"].visually-hidden {
 .user-navigation-links a:active {
     color: #33445a;
     opacity: 0.3;
+}
+
+.ui-widget.ui-widget-content {
+    background-color: #d7dcde;
+    border: none;
+}
+
+.ui-corner-all {
+    border-radius: 0;
+}
+
+.ui-widget-header {
+    background: #00ca74;
+}
+
+.ui-state-default {
+    border-radius: 50%;
+}
+
+.ui-widget-content .ui-state-default {
+    position: absolute;
+    background-color: #ffffff;
+    border: none;
+    -webkit-box-shadow: 1.3px 1.3px 1px #e0ddd8, 0 0 1.3px #ebe9e6;
+    box-shadow: 1.3px 1.3px 1px #e0ddd8, 0 0 1.3px #ebe9e6;
+}
+
+.ui-slider-horizontal {
+    height: 2px;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    top: -10px;
+}
+
+.ui-slider .ui-slider-handle {
+    width: 20px;
+    height: 20px;
 }
